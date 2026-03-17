@@ -1,0 +1,10 @@
+=== VERIFICATION ===
+Employees: 123
+Sante: 62, Surco: 62, Prev: 111
+Feb total: 12856.47, Jan total: 12647.12
+Masse: 4372828, Avg: 35551.45
+  celibataire_avec_enfants: 18
+  marie: 43
+  marie_avec_enfants: 25
+  celibataire: 37
+Arret days: 74 (18+12+10+20+7+7)

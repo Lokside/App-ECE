@@ -1,0 +1,220 @@
+﻿{
+    "contracts":  [
+                      {
+                          "id":  "CTR-ENT-A-HEALTH",
+                          "companyId":  "ENT-A",
+                          "companyName":  "TechNova Solutions",
+                          "code":  "SANTE-ENT-A",
+                          "name":  "Sante obligatoire",
+                          "contractType":  "health",
+                          "status":  "active",
+                          "mandatory":  true,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  32,
+                          "monthlyContribution":  3860.51,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice sante",
+                                                    "url":  "https://mon-ece.example/contracts/ent-a/notice-sante.pdf"
+                                                },
+                                                {
+                                                    "title":  "Tableau de garanties",
+                                                    "url":  "https://mon-ece.example/contracts/ent-a/garanties-sante.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-A-SUPPLEMENTARY",
+                          "companyId":  "ENT-A",
+                          "companyName":  "TechNova Solutions",
+                          "code":  "SURCO-ENT-A",
+                          "name":  "Surco facultative",
+                          "contractType":  "supplementary",
+                          "status":  "active",
+                          "mandatory":  false,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  25,
+                          "monthlyContribution":  1167.25,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice surco",
+                                                    "url":  "https://mon-ece.example/contracts/ent-a/notice-surco.pdf"
+                                                },
+                                                {
+                                                    "title":  "Conditions d adhesion",
+                                                    "url":  "https://mon-ece.example/contracts/ent-a/adhesion-surco.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-A-DISABILITY",
+                          "companyId":  "ENT-A",
+                          "companyName":  "TechNova Solutions",
+                          "code":  "PREV-ENT-A",
+                          "name":  "Prevoyance collective",
+                          "contractType":  "disability",
+                          "status":  "active",
+                          "mandatory":  true,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  47,
+                          "monthlyContribution":  1647.5,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice prevoyance",
+                                                    "url":  "https://mon-ece.example/contracts/ent-a/notice-prevoyance.pdf"
+                                                },
+                                                {
+                                                    "title":  "Procedure arret de travail",
+                                                    "url":  "https://mon-ece.example/contracts/ent-a/procedure-arret.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-B-HEALTH",
+                          "companyId":  "ENT-B",
+                          "companyName":  "MediCare Logistique",
+                          "code":  "SANTE-ENT-B",
+                          "name":  "Sante obligatoire",
+                          "contractType":  "health",
+                          "status":  "active",
+                          "mandatory":  true,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  19,
+                          "monthlyContribution":  2074.33,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice sante",
+                                                    "url":  "https://mon-ece.example/contracts/ent-b/notice-sante.pdf"
+                                                },
+                                                {
+                                                    "title":  "Tableau de garanties",
+                                                    "url":  "https://mon-ece.example/contracts/ent-b/garanties-sante.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-B-SUPPLEMENTARY",
+                          "companyId":  "ENT-B",
+                          "companyName":  "MediCare Logistique",
+                          "code":  "SURCO-ENT-B",
+                          "name":  "Surco facultative",
+                          "contractType":  "supplementary",
+                          "status":  "active",
+                          "mandatory":  false,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  21,
+                          "monthlyContribution":  908.38,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice surco",
+                                                    "url":  "https://mon-ece.example/contracts/ent-b/notice-surco.pdf"
+                                                },
+                                                {
+                                                    "title":  "Conditions d adhesion",
+                                                    "url":  "https://mon-ece.example/contracts/ent-b/adhesion-surco.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-B-DISABILITY",
+                          "companyId":  "ENT-B",
+                          "companyName":  "MediCare Logistique",
+                          "code":  "PREV-ENT-B",
+                          "name":  "Prevoyance collective",
+                          "contractType":  "disability",
+                          "status":  "active",
+                          "mandatory":  true,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  36,
+                          "monthlyContribution":  1223.22,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice prevoyance",
+                                                    "url":  "https://mon-ece.example/contracts/ent-b/notice-prevoyance.pdf"
+                                                },
+                                                {
+                                                    "title":  "Procedure arret de travail",
+                                                    "url":  "https://mon-ece.example/contracts/ent-b/procedure-arret.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-C-HEALTH",
+                          "companyId":  "ENT-C",
+                          "companyName":  "GreenBuild Conseil",
+                          "code":  "SANTE-ENT-C",
+                          "name":  "Sante obligatoire",
+                          "contractType":  "health",
+                          "status":  "active",
+                          "mandatory":  true,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  11,
+                          "monthlyContribution":  1495.67,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice sante",
+                                                    "url":  "https://mon-ece.example/contracts/ent-c/notice-sante.pdf"
+                                                },
+                                                {
+                                                    "title":  "Tableau de garanties",
+                                                    "url":  "https://mon-ece.example/contracts/ent-c/garanties-sante.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-C-SUPPLEMENTARY",
+                          "companyId":  "ENT-C",
+                          "companyName":  "GreenBuild Conseil",
+                          "code":  "SURCO-ENT-C",
+                          "name":  "Surco facultative",
+                          "contractType":  "supplementary",
+                          "status":  "active",
+                          "mandatory":  false,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  16,
+                          "monthlyContribution":  720.75,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice surco",
+                                                    "url":  "https://mon-ece.example/contracts/ent-c/notice-surco.pdf"
+                                                },
+                                                {
+                                                    "title":  "Conditions d adhesion",
+                                                    "url":  "https://mon-ece.example/contracts/ent-c/adhesion-surco.pdf"
+                                                }
+                                            ]
+                      },
+                      {
+                          "id":  "CTR-ENT-C-DISABILITY",
+                          "companyId":  "ENT-C",
+                          "companyName":  "GreenBuild Conseil",
+                          "code":  "PREV-ENT-C",
+                          "name":  "Prevoyance collective",
+                          "contractType":  "disability",
+                          "status":  "active",
+                          "mandatory":  true,
+                          "startDate":  "2024-01-01",
+                          "renewalDate":  "2026-12-31",
+                          "coveredEmployees":  28,
+                          "monthlyContribution":  965.98,
+                          "documentLinks":  [
+                                                {
+                                                    "title":  "Notice prevoyance",
+                                                    "url":  "https://mon-ece.example/contracts/ent-c/notice-prevoyance.pdf"
+                                                },
+                                                {
+                                                    "title":  "Procedure arret de travail",
+                                                    "url":  "https://mon-ece.example/contracts/ent-c/procedure-arret.pdf"
+                                                }
+                                            ]
+                      }
+                  ]
+}

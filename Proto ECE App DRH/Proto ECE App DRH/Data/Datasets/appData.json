@@ -1,0 +1,256 @@
+{
+    "widgets": [
+        {
+            "id": "cotisations",
+            "title": "Cotisations",
+            "isActive": true
+        },
+        {
+            "id": "arrets",
+            "title": "Arrêts de travail",
+            "isActive": true
+        },
+        {
+            "id": "affiliations",
+            "title": "Affiliations",
+            "isActive": true
+        },
+        {
+            "id": "consommation",
+            "title": "Consommation",
+            "isActive": false
+        },
+        {
+            "id": "dsn",
+            "title": "DSN",
+            "isActive": false
+        }
+    ],
+    "services": [
+        {
+            "id": "soins",
+            "title": "Mes soins",
+            "description": "Mon optique, dentaire, audio, hospitalisation...",
+            "backgroundColor": "violetPastel",
+            "blobColor": "blobSoins",
+            "imageAssetKey": "service1"
+        },
+        {
+            "id": "prevention",
+            "title": "Prévention santé",
+            "description": "Mon bilan cardio, médecine douce, ostéopathe...",
+            "backgroundColor": "bleuTurquoisePastel",
+            "blobColor": "blobPrevention",
+            "imageAssetKey": "service2"
+        },
+        {
+            "id": "actionSociale",
+            "title": "Action sociale et aides financières",
+            "description": "Maladie, décès, cancer...",
+            "backgroundColor": "rosePastel",
+            "blobColor": "blobActionSociale",
+            "imageAssetKey": "service3"
+        },
+        {
+            "id": "servicesEnPlus",
+            "title": "Mes services en plus",
+            "description": "Les services de ma branche professionnelle...",
+            "backgroundColor": "jaunePastel",
+            "blobColor": "blobServicesPlus",
+            "imageAssetKey": "service4"
+        }
+    ],
+    "upcomingEvents": [
+        {
+            "day": 15,
+            "month": "mars",
+            "time": "",
+            "name": null,
+            "subject": "Échéance de cotisations"
+        },
+        {
+            "day": 19,
+            "month": "mars",
+            "time": "10:30",
+            "name": "Mme MARTIN",
+            "subject": "Mise à jour contrat santé"
+        },
+        {
+            "day": 22,
+            "month": "mars",
+            "time": "",
+            "name": null,
+            "subject": "Envoi de la DSN"
+        },
+        {
+            "day": 22,
+            "month": "mars",
+            "time": "14:00",
+            "name": "Mr DUPONT",
+            "subject": "Affiliation nouvelles entreprises"
+        }
+    ],
+    "calendarEvents": [
+        {
+            "day": 19,
+            "month": "février",
+            "time": "10:30",
+            "name": "Mr DURAND",
+            "subject": "Questions sur mon contrat"
+        },
+        {
+            "day": 22,
+            "month": "février",
+            "time": "14:00",
+            "name": "Mr DURAND",
+            "subject": "Questions sur mon contrat"
+        },
+        {
+            "day": 9,
+            "month": "mars",
+            "time": "10:30",
+            "name": "Mr DURAND",
+            "subject": "Questions sur mon contrat"
+        },
+        {
+            "day": 15,
+            "month": "mars",
+            "time": "",
+            "name": null,
+            "subject": "Échéance de cotisations"
+        },
+        {
+            "day": 19,
+            "month": "mars",
+            "time": "10:30",
+            "name": "Mme MARTIN",
+            "subject": "Mise à jour contrat santé"
+        },
+        {
+            "day": 22,
+            "month": "mars",
+            "time": "",
+            "name": null,
+            "subject": "Envoi de la DSN"
+        },
+        {
+            "day": 22,
+            "month": "mars",
+            "time": "14:00",
+            "name": "Mr DUPONT",
+            "subject": "Affiliation nouvelles entreprises"
+        }
+    ],
+    "notifications": {
+        "sections": [
+            {
+                "title": "AUJOURD'HUI",
+                "items": [
+                    {
+                        "category": "vieCompte",
+                        "title": "Votre bordereau de cotisations est disponible",
+                        "time": "09h30",
+                        "isRecent": true
+                    },
+                    {
+                        "category": "messagerie",
+                        "title": "Nouveau message de votre gestionnaire",
+                        "time": "08h15",
+                        "isRecent": true
+                    }
+                ]
+            },
+            {
+                "title": "HIER",
+                "items": [
+                    {
+                        "category": "vieContrat",
+                        "title": "Votre attestation est disponible",
+                        "time": "17h45",
+                        "isRecent": true
+                    },
+                    {
+                        "category": "vieCompte",
+                        "title": "Mise à jour de vos informations",
+                        "time": "14h20",
+                        "isRecent": true
+                    }
+                ]
+            },
+            {
+                "title": "CETTE SEMAINE",
+                "items": [
+                    {
+                        "category": "messagerie",
+                        "title": "Réponse à votre demande de remboursement",
+                        "time": "Lun. 10h00",
+                        "isRecent": false
+                    },
+                    {
+                        "category": "vieContrat",
+                        "title": "Modification de votre contrat prise en compte",
+                        "time": "Lun. 09h00",
+                        "isRecent": false
+                    },
+                    {
+                        "category": "vieCompte",
+                        "title": "Nouvelle affiliation enregistrée",
+                        "time": "Dim. 16h30",
+                        "isRecent": false
+                    }
+                ]
+            }
+        ]
+    },
+    "actionCards": [
+        {
+            "id": "affiliations",
+            "title": "Affiliations",
+            "subtitle": "3 entreprise(s)",
+            "count": 6
+        },
+        {
+            "id": "arrets",
+            "title": "Arrêts de travail",
+            "subtitle": "2 entreprise(s)",
+            "count": 3
+        }
+    ],
+    "actionDetails": {
+        "Arrêts de travail": [
+            {
+                "companyName": "TechNova Solutions",
+                "city": "Lyon",
+                "count": 1,
+                "duration": "Depuis 2 semaines"
+            },
+            {
+                "companyName": "MediCare Logistique",
+                "city": "Lille",
+                "count": 2,
+                "duration": "Depuis 1 semaine"
+            }
+        ],
+        "Affiliations": [
+            {
+                "companyName": "TechNova Solutions",
+                "city": "Lyon",
+                "count": 3,
+                "duration": "Depuis 3 semaines"
+            },
+            {
+                "companyName": "MediCare Logistique",
+                "city": "Lille",
+                "count": 2,
+                "duration": "Depuis 1 semaine"
+            },
+            {
+                "companyName": "GreenBuild Conseil",
+                "city": "Bordeaux",
+                "count": 1,
+                "duration": "Depuis 2 jours"
+            }
+        ]
+    },
+    "consommationBarChart": [0.6, 0.4, 0.8, 0.5, 0.7, 0.3, 0.9]
+}

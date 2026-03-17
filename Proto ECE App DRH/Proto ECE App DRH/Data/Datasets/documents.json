@@ -1,0 +1,116 @@
+{
+  "siret": "79848315200012",
+  "profile": "Cadre",
+  "categories": [
+    {
+      "id": "prevoyance",
+      "label": "Prévoyance",
+      "folder": "Data/Documents/Prevoyance",
+      "documents": [
+        {
+          "id": "prev-assistance-auxia",
+          "title": "Assistance prévoyance Auxia",
+          "filename": "PREVOYANCE - Assistance prévoyance auxia - Cadre.pdf",
+          "type": "assistance"
+        },
+        {
+          "id": "prev-conditions-generales",
+          "title": "Conditions générales",
+          "filename": "PREVOYANCE - Conditions générales - Cadre.pdf",
+          "type": "conditions_generales"
+        },
+        {
+          "id": "prev-cg-notice-assistance",
+          "title": "Conditions générales valant notice d'information de l'assistance",
+          "filename": "PREVOYANCE - Conditions générales valant notice d'information de l'assistance - Cadre.pdf",
+          "type": "conditions_generales"
+        },
+        {
+          "id": "prev-conditions-particulieres",
+          "title": "Conditions particulières",
+          "filename": "PREVOYANCE - Conditions particulières - Cadre.pdf",
+          "type": "conditions_particulieres"
+        },
+        {
+          "id": "prev-ipid",
+          "title": "Document d'information sur les produits d'assurance",
+          "filename": "PREVOYANCE - Document d'information sur les produits d'assurance - Cadre.pdf",
+          "type": "ipid"
+        },
+        {
+          "id": "prev-fiche-info-conseil",
+          "title": "Fiche d'information et de conseil",
+          "filename": "PREVOYANCE - Fiche d'information et de conseil - Cadre.pdf",
+          "type": "fiche_conseil"
+        },
+        {
+          "id": "prev-notice-salarie",
+          "title": "Notice d'information salarié",
+          "filename": "PREVOYANCE - Notice d'information salarié - Cadre.pdf",
+          "type": "notice"
+        },
+        {
+          "id": "prev-garanties",
+          "title": "Vos garanties prévoyance",
+          "filename": "PREVOYANCE - Vos garanties prévoyance - Cadre.pdf",
+          "type": "garanties"
+        }
+      ]
+    },
+    {
+      "id": "sante",
+      "label": "Santé",
+      "folder": "Data/Documents/Sante",
+      "documents": [
+        {
+          "id": "sante-annexe-frais-gestion",
+          "title": "Annexe sur les frais de gestion et de redistribution",
+          "filename": "SANTE - Annexe sur les frais de gestion et de redistribution - Cadre.pdf",
+          "type": "annexe"
+        },
+        {
+          "id": "sante-conditions-generales",
+          "title": "Conditions générales",
+          "filename": "SANTE - Conditions générales - Cadre.pdf",
+          "type": "conditions_generales"
+        },
+        {
+          "id": "sante-cg-notice-assistance",
+          "title": "Conditions générales valant notice d'information de l'assistance",
+          "filename": "SANTE - Conditions générales valant notice d'information de l'assistance - Cadre.pdf",
+          "type": "conditions_generales"
+        },
+        {
+          "id": "sante-conditions-particulieres",
+          "title": "Conditions particulières",
+          "filename": "SANTE - Conditions particulières - Cadre.pdf",
+          "type": "conditions_particulieres"
+        },
+        {
+          "id": "sante-fiche-info-conseil",
+          "title": "Fiche d'information et de conseil",
+          "filename": "SANTE - Fiche d'information et de conseil - Cadre.pdf",
+          "type": "fiche_conseil"
+        },
+        {
+          "id": "sante-guide-affiliation",
+          "title": "Guide affiliation",
+          "filename": "SANTE - Guide affiliation - Cadre.pdf",
+          "type": "guide"
+        },
+        {
+          "id": "sante-notice-salarie",
+          "title": "Notice d'information salarié",
+          "filename": "SANTE - Notice d'information salarié - Cadre.pdf",
+          "type": "notice"
+        },
+        {
+          "id": "sante-garanties",
+          "title": "Vos garanties frais de santé",
+          "filename": "SANTE - Vos garanties frais de santé - Cadre.pdf",
+          "type": "garanties"
+        }
+      ]
+    }
+  ]
+}
