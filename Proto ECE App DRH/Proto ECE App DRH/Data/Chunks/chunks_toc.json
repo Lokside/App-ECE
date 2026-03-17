@@ -1,0 +1,328 @@
+{
+  "purpose": "Sommaire thématique des documents contractuels. Le LLM lit CE FICHIER EN PREMIER pour identifier les chunks à charger selon la question utilisateur. Ne jamais charger documents_chunks.json en entier.",
+  "instructions": "1) Lire ce sommaire. 2) Identifier le(s) topic(s) pertinents. 3) Charger UNIQUEMENT les chunk_ids listés. 4) Répondre à partir de ces chunks.",
+  "contract_context": {
+    "company": "YOANN CONTE BORD DU LAC - SAS",
+    "siret": "798 483 152 00012",
+    "insurer": "Radiance Mutuelle (groupe Malakoff Humanis)",
+    "profile": "Personnel cadre et assimilé cadre",
+    "contracts": [
+      {"type": "Contrat socle santé obligatoire", "number": "00700087730", "responsible": true},
+      {"type": "Contrat surcomplémentaire santé facultatif", "number": "00700087731", "responsible": false}
+    ],
+    "effective_date": "2026-02-01"
+  },
+
+  "topics": [
+
+    {
+      "id": "pourquoi_cotisations_sante",
+      "label": "Pourquoi je paie des cotisations santé",
+      "keywords": ["pourquoi", "cotisations", "payer", "obligatoire", "raison", "but", "sert à quoi"],
+      "summary": "La complémentaire santé est obligatoire par la loi (art. L.911-7 CSS, généralisation au 1er janvier 2016). L'employeur la finance en partie, le reste est prélevé sur le salaire. Elle rembourse les frais de santé en complément de la Sécurité sociale.",
+      "chunk_ids": [
+        "sante_fiche_d'information_et_de_conseil_005",
+        "sante_fiche_d'information_et_de_conseil_006",
+        "sante_notice_d'information_salarié_003",
+        "sante_notice_d'information_salarié_004",
+        "sante_conditions_générales_027"
+      ]
+    },
+
+    {
+      "id": "montant_cotisations",
+      "label": "Combien coûtent mes cotisations / montant des cotisations",
+      "keywords": ["combien", "montant", "prix", "coût", "tarif", "cotisation", "PMSS", "pourcentage"],
+      "summary": "Cotisations exprimées en % du PMSS. Socle obligatoire : salarié 1.13%, conjoint 1.29%, enfant 0.70% (gratuit dès le 3e). Option facultative : adulte 0.39-0.53%, enfant 0.24-0.33%.",
+      "chunk_ids": [
+        "sante_conditions_particulières_008",
+        "sante_conditions_particulières_014",
+        "sante_conditions_particulières_007",
+        "sante_conditions_particulières_013"
+      ]
+    },
+
+    {
+      "id": "structure_cotisations",
+      "label": "Structure et paiement des cotisations",
+      "keywords": ["structure", "paiement", "prélèvement", "échéance", "trimestriel", "mensuel", "retard"],
+      "summary": "Structure Salarié/Conjoint/Enfant pour le socle, Adulte/Enfant pour l'option. Paiement trimestriel à terme échu (15 premiers jours). Défaut de paiement : suspension après 30j de mise en demeure, résiliation 10j après.",
+      "chunk_ids": [
+        "sante_conditions_générales_085",
+        "sante_conditions_générales_087",
+        "sante_conditions_générales_088",
+        "sante_conditions_générales_089",
+        "sante_conditions_générales_090",
+        "sante_conditions_générales_091",
+        "sante_conditions_générales_092"
+      ]
+    },
+
+    {
+      "id": "quelles_garanties",
+      "label": "Quelles sont mes garanties / que couvre mon contrat",
+      "keywords": ["garanties", "couverture", "couvert", "remboursé", "prise en charge", "niveau"],
+      "summary": "Niveaux FM2/H2/D2/O2/P2. Couvre frais médicaux, hospitalisation, dentaire, optique, prévention. Contrat responsable (socle) + option non responsable facultative.",
+      "chunk_ids": [
+        "sante_vos_garanties_frais_de_santé_002",
+        "sante_vos_garanties_frais_de_santé_006",
+        "sante_conditions_particulières_006",
+        "sante_conditions_particulières_007",
+        "sante_notice_d'information_salarié_003"
+      ]
+    },
+
+    {
+      "id": "garanties_detail_frais_medicaux",
+      "label": "Détail des remboursements frais médicaux, optique, dentaire, hospitalisation",
+      "keywords": ["optique", "lunettes", "dentaire", "hospitalisation", "consultation", "médecin", "remboursement", "tableau", "détail"],
+      "summary": "Tableaux détaillés des garanties par poste de soins : frais médicaux, aide auditive, hospitalisation, dentaire, optique, prévention.",
+      "chunk_ids": [
+        "sante_conditions_particulières_009",
+        "sante_conditions_particulières_010",
+        "sante_conditions_particulières_011",
+        "sante_conditions_particulières_015",
+        "sante_conditions_particulières_016",
+        "sante_conditions_particulières_017",
+        "sante_conditions_particulières_018",
+        "sante_vos_garanties_frais_de_santé_007",
+        "sante_vos_garanties_frais_de_santé_008",
+        "sante_vos_garanties_frais_de_santé_009",
+        "sante_vos_garanties_frais_de_santé_010"
+      ]
+    },
+
+    {
+      "id": "famille_ayants_droit",
+      "label": "Couverture de ma famille / conjoint / enfants",
+      "keywords": ["famille", "conjoint", "enfant", "ayant droit", "bénéficiaire", "inscrire", "couverture familiale"],
+      "summary": "Structure Salarié/Conjoint/Enfant. Conjoint et enfants en couverture facultative. Cotisation supplémentaire à la charge du salarié. Gratuité à partir du 3e enfant.",
+      "chunk_ids": [
+        "sante_notice_d'information_salarié_006",
+        "sante_notice_d'information_salarié_007",
+        "sante_notice_d'information_salarié_008",
+        "sante_conditions_générales_086"
+      ]
+    },
+
+    {
+      "id": "affiliation_inscription",
+      "label": "Comment m'affilier / m'inscrire / pièces à fournir",
+      "keywords": ["affilier", "inscription", "inscrire", "bulletin", "pièces", "documents", "démarche", "Noémie", "télétransmission"],
+      "summary": "Remplir le bulletin d'affiliation, fournir RIB + éventuel mandat SEPA. Activer la télétransmission Noémie via ameli.fr. 30 jours pour retourner les informations.",
+      "chunk_ids": [
+        "sante_notice_d'information_salarié_017",
+        "sante_notice_d'information_salarié_018",
+        "sante_notice_d'information_salarié_019",
+        "sante_notice_d'information_salarié_009",
+        "sante_conditions_générales_039",
+        "sante_conditions_générales_040",
+        "sante_conditions_générales_041"
+      ]
+    },
+
+    {
+      "id": "option_surcomplementaire",
+      "label": "L'option facultative / surcomplémentaire",
+      "keywords": ["option", "surcomplémentaire", "facultatif", "renforcer", "améliorer", "choisir", "résilier option"],
+      "summary": "Contrat surcomplémentaire non responsable à adhésion facultative. 2 niveaux (option 1 et 2). Coût entièrement à charge du salarié. 3 mois pour s'inscrire, résiliation possible après 1 an.",
+      "chunk_ids": [
+        "sante_notice_d'information_salarié_004",
+        "sante_notice_d'information_salarié_005",
+        "sante_conditions_particulières_012",
+        "sante_conditions_particulières_013",
+        "sante_conditions_particulières_014"
+      ]
+    },
+
+    {
+      "id": "debut_fin_garanties",
+      "label": "Début et fin des garanties / résiliation",
+      "keywords": ["début", "fin", "résiliation", "résilier", "quitter", "cessation", "portabilité", "départ"],
+      "summary": "Garanties débutent à l'inscription. Cessent à la fin du contrat de travail (avec portabilité possible). Résiliation par le souscripteur : 2 mois avant renouvellement ou à tout moment après 1 an.",
+      "chunk_ids": [
+        "sante_notice_d'information_salarié_019",
+        "sante_notice_d'information_salarié_020",
+        "sante_conditions_générales_028",
+        "sante_conditions_générales_029",
+        "sante_conditions_générales_030",
+        "sante_conditions_générales_048",
+        "sante_conditions_générales_049",
+        "sante_conditions_générales_050"
+      ]
+    },
+
+    {
+      "id": "portabilite",
+      "label": "Portabilité des droits après fin de contrat de travail",
+      "keywords": ["portabilité", "chômage", "licenciement", "fin de contrat", "maintien", "après départ"],
+      "summary": "Maintien gratuit des garanties en cas de cessation du contrat de travail ouvrant droit à l'assurance chômage. Durée proportionnelle à l'ancienneté (max 12 mois).",
+      "chunk_ids": [
+        "sante_conditions_générales_063",
+        "sante_conditions_générales_064",
+        "sante_conditions_générales_065",
+        "sante_conditions_générales_066"
+      ]
+    },
+
+    {
+      "id": "remboursement_comment",
+      "label": "Comment me faire rembourser / tiers payant / démarches",
+      "keywords": ["remboursement", "rembourser", "tiers payant", "carte", "démarche", "justificatif", "délai"],
+      "summary": "Télétransmission Noémie pour le remboursement automatique. Carte de tiers payant pour ne pas avancer les frais. Demandes dans un délai de 2 ans. Espace client ou appli Malakoff Humanis.",
+      "chunk_ids": [
+        "sante_notice_d'information_salarié_009",
+        "sante_notice_d'information_salarié_010",
+        "sante_notice_d'information_salarié_035",
+        "sante_notice_d'information_salarié_036",
+        "sante_conditions_générales_060",
+        "sante_conditions_générales_061"
+      ]
+    },
+
+    {
+      "id": "contrat_responsable",
+      "label": "Qu'est-ce qu'un contrat responsable",
+      "keywords": ["responsable", "non responsable", "contrat responsable", "100% santé", "reste à charge zéro"],
+      "summary": "Un contrat 'responsable' respecte des critères légaux (art. L.871-1 et R.871-1 CSS) : plancher et plafond de remboursement. Bénéficie d'avantages fiscaux et sociaux. Le socle est responsable, la surcomplémentaire ne l'est pas.",
+      "chunk_ids": [
+        "sante_fiche_d'information_et_de_conseil_006",
+        "sante_conditions_générales_026",
+        "sante_conditions_générales_027"
+      ]
+    },
+
+    {
+      "id": "frais_gestion_redistribution",
+      "label": "Frais de gestion et taux de redistribution",
+      "keywords": ["frais de gestion", "redistribution", "où va l'argent", "répartition"],
+      "summary": "En 2024, taux de redistribution de 74.6% (sur l'ensemble des cotisations, 74.6% reversées en remboursements). Informations sur les frais de gestion de Radiance Mutuelle.",
+      "chunk_ids": [
+        "sante_annexe_sur_les_frais_de_gestion_et_de_redistribution_001",
+        "sante_annexe_sur_les_frais_de_gestion_et_de_redistribution_002",
+        "sante_annexe_sur_les_frais_de_gestion_et_de_redistribution_003",
+        "sante_annexe_sur_les_frais_de_gestion_et_de_redistribution_004"
+      ]
+    },
+
+    {
+      "id": "exclusions_limitations",
+      "label": "Ce qui n'est pas couvert / exclusions",
+      "keywords": ["exclusion", "pas couvert", "pas remboursé", "limitation", "interdit", "refusé"],
+      "summary": "Exclusions : actes esthétiques non reconstructeurs, soins à l'étranger (plafonnés), actes non prescrits. Limitations sur les forfaits annuels (non reportables).",
+      "chunk_ids": [
+        "sante_conditions_générales_055",
+        "sante_conditions_générales_056",
+        "sante_conditions_générales_057",
+        "sante_notice_d'information_salarié_033"
+      ]
+    },
+
+    {
+      "id": "donnees_personnelles",
+      "label": "Protection de mes données personnelles",
+      "keywords": ["données personnelles", "RGPD", "vie privée", "traitement", "droit", "opposition"],
+      "summary": "Données traitées pour la gestion du contrat, le calcul des prestations, les statistiques (anonymisées). Droits d'accès, rectification, opposition selon RGPD.",
+      "chunk_ids": [
+        "sante_conditions_générales_108",
+        "sante_conditions_générales_109",
+        "sante_conditions_générales_110",
+        "sante_conditions_générales_111"
+      ]
+    },
+
+    {
+      "id": "assistance_sante",
+      "label": "Services d'assistance santé",
+      "keywords": ["assistance", "aide", "accompagnement", "Auxia", "hospitalisation", "cancer", "handicap"],
+      "summary": "Garanties d'assistance via Auxia Assistance : aide au retour à domicile après hospitalisation, accompagnement cancer, handicap, soutien psychologique.",
+      "chunk_ids": [
+        "sante_conditions_générales_valant_notice_d'information_de_l'assistance_005",
+        "sante_conditions_générales_valant_notice_d'information_de_l'assistance_006",
+        "sante_conditions_générales_valant_notice_d'information_de_l'assistance_007",
+        "sante_conditions_générales_valant_notice_d'information_de_l'assistance_008"
+      ]
+    },
+
+    {
+      "id": "prevoyance_pourquoi",
+      "label": "Pourquoi je paie des cotisations prévoyance / c'est quoi la prévoyance",
+      "keywords": ["prévoyance", "incapacité", "invalidité", "décès", "arrêt de travail", "pourquoi prévoyance"],
+      "summary": "La prévoyance collective couvre les risques lourds : décès, incapacité de travail, invalidité. Obligatoire pour les cadres. Verse des indemnités/rentes en complément de la Sécurité sociale.",
+      "chunk_ids": [
+        "prevoyance_fiche_d'information_et_de_conseil_004",
+        "prevoyance_fiche_d'information_et_de_conseil_005",
+        "prevoyance_conditions_générales_052",
+        "prevoyance_conditions_générales_053",
+        "prevoyance_notice_d'information_salarié_003",
+        "prevoyance_notice_d'information_salarié_004"
+      ]
+    },
+
+    {
+      "id": "prevoyance_garanties_deces",
+      "label": "Garanties décès / capital décès",
+      "keywords": ["décès", "capital", "rente", "bénéficiaire", "orphelin", "conjoint survivant"],
+      "summary": "Capital décès versé aux bénéficiaires désignés. Rente éducation pour les enfants. Rente de conjoint. Garantie perte totale et irréversible d'autonomie.",
+      "chunk_ids": [
+        "prevoyance_conditions_générales_055",
+        "prevoyance_conditions_générales_056",
+        "prevoyance_conditions_générales_057",
+        "prevoyance_conditions_générales_058",
+        "prevoyance_conditions_générales_059",
+        "prevoyance_conditions_générales_060"
+      ]
+    },
+
+    {
+      "id": "prevoyance_arret_travail",
+      "label": "Arrêt de travail / incapacité / invalidité",
+      "keywords": ["arrêt", "maladie", "incapacité", "invalidité", "indemnités journalières", "IJ"],
+      "summary": "Indemnités journalières en cas d'arrêt de travail (maladie, accident). Rente d'invalidité si incapacité permanente. Complète les prestations de la Sécurité sociale.",
+      "chunk_ids": [
+        "prevoyance_conditions_générales_070",
+        "prevoyance_conditions_générales_071",
+        "prevoyance_conditions_générales_072",
+        "prevoyance_conditions_générales_073",
+        "prevoyance_conditions_générales_074",
+        "prevoyance_notice_d'information_salarié_005",
+        "prevoyance_notice_d'information_salarié_006"
+      ]
+    },
+
+    {
+      "id": "prevoyance_assistance",
+      "label": "Services d'assistance prévoyance",
+      "keywords": ["assistance prévoyance", "Auxia", "aide prévoyance", "accompagnement social", "juridique"],
+      "summary": "Assistance via Auxia : accompagnement social et juridique, aide en cas d'incapacité/invalidité, soutien aux proches en cas de décès.",
+      "chunk_ids": [
+        "prevoyance_assistance_prévoyance_auxia_002",
+        "prevoyance_assistance_prévoyance_auxia_003",
+        "prevoyance_assistance_prévoyance_auxia_004",
+        "prevoyance_assistance_prévoyance_auxia_005"
+      ]
+    },
+
+    {
+      "id": "lexique",
+      "label": "Définitions et vocabulaire (lexique)",
+      "keywords": ["définition", "c'est quoi", "signifie", "veut dire", "PMSS", "base de remboursement", "ticket modérateur", "OPTAM"],
+      "summary": "Lexique des termes contractuels : PMSS, base de remboursement, ticket modérateur, contrat responsable, OPTAM, DSN, etc.",
+      "chunk_ids": [
+        "sante_conditions_générales_012",
+        "sante_conditions_générales_013",
+        "sante_conditions_générales_014",
+        "sante_conditions_générales_015",
+        "sante_conditions_générales_016",
+        "sante_conditions_générales_017",
+        "sante_conditions_générales_018",
+        "sante_conditions_générales_019",
+        "sante_conditions_générales_020",
+        "sante_conditions_générales_021",
+        "sante_conditions_générales_022",
+        "sante_conditions_générales_023",
+        "sante_conditions_générales_024"
+      ]
+    }
+  ]
+}

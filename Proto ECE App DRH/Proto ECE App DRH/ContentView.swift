@@ -78,10 +78,17 @@ struct ContentView: View {
     // MARK: - Data Loading
 
     private func loadData() {
+        print("📦 [Data] Chargement des données JSON...")
         do {
             let appData = try repository.fetchAppData()
+            print("✅ [Data] appData.json chargé — \(appData.widgets.count) widgets, \(appData.services.count) services, \(appData.upcomingEvents.count) événements à venir, \(appData.calendarEvents.count) événements calendrier")
+            print("✅ [Data] appData.json — \(appData.notifications.sections.count) sections notifs, \(appData.actionCards.count) action cards, \(appData.consommationBarChart.count) valeurs consommation")
+
             let snapshot = try repository.fetchDashboardData()
+            print("✅ [Data] datasets HR chargés — \(snapshot.companies.count) entreprises, \(snapshot.contracts.count) contrats, \(snapshot.employees.count) employés, \(snapshot.employeeContracts.count) contrats employés, \(snapshot.events.count) événements lifecycle")
+
             let state = DashboardAssembler.assemble(snapshot: snapshot, appData: appData)
+            print("✅ [Data] DashboardState assemblé — cotisations: \(AppFormatters.currency(state.totalMonthlyContribution)), arrêts: \(state.totalArretDays)j, affiliations santé: \(AppFormatters.percent(state.healthAffiliationRate))")
 
             widgets = appData.widgets.map { WidgetItem(from: $0) }
             serviceItems = appData.services.map { ServiceItem(from: $0) }
@@ -94,8 +101,9 @@ struct ContentView: View {
             }
             consommationValues = appData.consommationBarChart
             dashboardState = state
+            print("🏁 [Data] Toutes les données sont prêtes")
         } catch {
-            print("Error loading data: \(error)")
+            print("❌ [Data] Erreur chargement: \(error)")
         }
     }
 
