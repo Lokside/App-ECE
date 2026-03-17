@@ -129,14 +129,6 @@ struct ContentView: View {
                 }
 
                 swipeDots
-
-                Button { showWidgetSheet = true } label: {
-                    Text("+ Ajouter des widgets")
-                        .font(.system(size: 14, weight: .regular))
-                        .foregroundStyle(ColorTokens.noir)
-                        .underline()
-                }
-                .buttonStyle(.plain)
             }
             .padding(.top, 8)
         }
@@ -409,7 +401,7 @@ struct ContentView: View {
 
     private var topBar: some View {
         HStack {
-            IATogglePill(showAI: $showAI, onMenuTap: { showWidgetSheet = true })
+            DIconCircleButton(symbol: "square.grid.2x2", iconColor: .white, background: ColorTokens.bleuTurquoiseDark)
 
             Spacer()
 
