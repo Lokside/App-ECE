@@ -206,14 +206,14 @@
         {
             "id": "affiliations",
             "title": "Affiliations",
-            "subtitle": "3 entreprise(s)",
-            "count": 6
+            "subtitle": "1 entreprise",
+            "count": 3
         },
         {
             "id": "arrets",
             "title": "Arrêts de travail",
-            "subtitle": "2 entreprise(s)",
-            "count": 3
+            "subtitle": "1 entreprise",
+            "count": 1
         }
     ],
     "actionDetails": {
@@ -223,12 +223,6 @@
                 "city": "Lyon",
                 "count": 1,
                 "duration": "Depuis 2 semaines"
-            },
-            {
-                "companyName": "MediCare Logistique",
-                "city": "Lille",
-                "count": 2,
-                "duration": "Depuis 1 semaine"
             }
         ],
         "Affiliations": [
@@ -237,18 +231,6 @@
                 "city": "Lyon",
                 "count": 3,
                 "duration": "Depuis 3 semaines"
-            },
-            {
-                "companyName": "MediCare Logistique",
-                "city": "Lille",
-                "count": 2,
-                "duration": "Depuis 1 semaine"
-            },
-            {
-                "companyName": "GreenBuild Conseil",
-                "city": "Bordeaux",
-                "count": 1,
-                "duration": "Depuis 2 jours"
             }
         ]
     },

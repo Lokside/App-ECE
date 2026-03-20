@@ -6,6 +6,8 @@ import SwiftUI
 struct DashboardState {
     // Cotisations
     let totalMonthlyContribution: Double
+    let totalQuarterlyContribution: Double
+    let previousQuarterlyContribution: Double
     let previousMonthlyContribution: Double
     let nextDueDate: String
 
@@ -62,7 +64,9 @@ enum DashboardAssembler {
 
         // --- Cotisations ---
         let totalMonthly = snapshot.contracts.reduce(0.0) { $0 + $1.monthlyContribution }
-        // Simulate previous month slightly less
+        let totalQuarterly = totalMonthly * 3
+        // Simulate previous quarter slightly less
+        let previousQuarterly = totalQuarterly * 0.98
         let previousMonthly = totalMonthly * 0.98
 
         // Next due date: 15th of current month or next month
@@ -100,6 +104,8 @@ enum DashboardAssembler {
 
         return DashboardState(
             totalMonthlyContribution: totalMonthly,
+            totalQuarterlyContribution: totalQuarterly,
+            previousQuarterlyContribution: previousQuarterly,
             previousMonthlyContribution: previousMonthly,
             nextDueDate: nextDue,
             totalArretDays: totalDays,

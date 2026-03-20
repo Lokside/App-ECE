@@ -185,12 +185,12 @@ struct ContentView: View {
     }
 
     private var cotisationsCard: some View {
-        let total = dashboardState?.totalMonthlyContribution ?? 0
-        let previous = dashboardState?.previousMonthlyContribution ?? 0
+        let totalQuarterly = dashboardState?.totalQuarterlyContribution ?? 0
+        let previousQuarterly = dashboardState?.previousQuarterlyContribution ?? 0
         let nextDue = dashboardState?.nextDueDate ?? ""
 
-        let totalFormatted = AppFormatters.currency(total)
-        let previousFormatted = AppFormatters.currency(previous)
+        let totalFormatted = AppFormatters.currency(totalQuarterly)
+        let previousFormatted = AppFormatters.currency(previousQuarterly)
 
         return ZStack {
             DRemoteAssetImage(urlString: AssetURLs.cotisationWaves)
@@ -229,7 +229,7 @@ struct ContentView: View {
 
                 Spacer(minLength: 0)
 
-                Text("Dernier prélèvement : \(previousFormatted)")
+                Text("Dernier trimestre : \(previousFormatted)")
                     .font(.system(size: 12, weight: .regular))
                     .minimumScaleFactor(0.7)
                     .lineLimit(1)

@@ -1,157 +1,55 @@
-﻿{
-    "companies":  [
-                      {
-                          "id":  "ENT-A",
-                          "name":  "TechNova Solutions",
-                          "siret":  "12345678900011",
-                          "effectif":  52,
-                          "address":  {
-                                          "line1":  "24 rue des Lumieres",
-                                          "postalCode":  "69003",
-                                          "city":  "Lyon"
-                                      },
-                          "users":  [
-                                        {
-                                            "id":  "USR-ENT-A-01",
-                                            "firstName":  "Camille",
-                                            "lastName":  "Roux",
-                                            "role":  "DRH",
-                                            "email":  "camille.roux@technova-solutions.fr",
-                                            "phone":  "04 72 10 20 30",
-                                            "isPrimaryContact":  true
-                                        },
-                                        {
-                                            "id":  "USR-ENT-A-02",
-                                            "firstName":  "Martin",
-                                            "lastName":  "Dupont",
-                                            "role":  "Gestionnaire paie",
-                                            "email":  "martin.dupont@technova-solutions.fr",
-                                            "phone":  "04 72 10 20 31",
-                                            "isPrimaryContact":  false
-                                        }
-                                    ],
-                          "documents":  [
-                                            {
-                                                "id":  "DOC-ENT-A-01",
-                                                "title":  "Kbis",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/technova/kbis.pdf"
-                                            },
-                                            {
-                                                "id":  "DOC-ENT-A-02",
-                                                "title":  "Contrat cadre",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/technova/contrat-cadre.pdf"
-                                            },
-                                            {
-                                                "id":  "DOC-ENT-A-03",
-                                                "title":  "Grille de cotisations",
-                                                "type":  "xlsx",
-                                                "url":  "https://mon-ece.example/documents/technova/grille-cotisations.xlsx"
-                                            }
-                                        ]
-                      },
-                      {
-                          "id":  "ENT-B",
-                          "name":  "MediCare Logistique",
-                          "siret":  "98765432100022",
-                          "effectif":  41,
-                          "address":  {
-                                          "line1":  "8 avenue des Arts",
-                                          "postalCode":  "59000",
-                                          "city":  "Lille"
-                                      },
-                          "users":  [
-                                        {
-                                            "id":  "USR-ENT-B-01",
-                                            "firstName":  "Sarah",
-                                            "lastName":  "Meunier",
-                                            "role":  "Responsable RH",
-                                            "email":  "sarah.meunier@medicare-logistique.fr",
-                                            "phone":  "03 20 44 56 70",
-                                            "isPrimaryContact":  true
-                                        },
-                                        {
-                                            "id":  "USR-ENT-B-02",
-                                            "firstName":  "Leo",
-                                            "lastName":  "Girard",
-                                            "role":  "Courtier",
-                                            "email":  "leo.girard@medicare-logistique.fr",
-                                            "phone":  "03 20 44 56 71",
-                                            "isPrimaryContact":  false
-                                        }
-                                    ],
-                          "documents":  [
-                                            {
-                                                "id":  "DOC-ENT-B-01",
-                                                "title":  "Kbis",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/medicare/kbis.pdf"
-                                            },
-                                            {
-                                                "id":  "DOC-ENT-B-02",
-                                                "title":  "Notice prevoyance",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/medicare/notice-prevoyance.pdf"
-                                            },
-                                            {
-                                                "id":  "DOC-ENT-B-03",
-                                                "title":  "Procedure DSN",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/medicare/procedure-dsn.pdf"
-                                            }
-                                        ]
-                      },
-                      {
-                          "id":  "ENT-C",
-                          "name":  "GreenBuild Conseil",
-                          "siret":  "45678912300033",
-                          "effectif":  30,
-                          "address":  {
-                                          "line1":  "17 quai des Chartrons",
-                                          "postalCode":  "33000",
-                                          "city":  "Bordeaux"
-                                      },
-                          "users":  [
-                                        {
-                                            "id":  "USR-ENT-C-01",
-                                            "firstName":  "Nina",
-                                            "lastName":  "Morel",
-                                            "role":  "DRH",
-                                            "email":  "nina.morel@greenbuild-conseil.fr",
-                                            "phone":  "05 56 10 32 40",
-                                            "isPrimaryContact":  true
-                                        },
-                                        {
-                                            "id":  "USR-ENT-C-02",
-                                            "firstName":  "Hugo",
-                                            "lastName":  "Perrin",
-                                            "role":  "Administrateur",
-                                            "email":  "hugo.perrin@greenbuild-conseil.fr",
-                                            "phone":  "05 56 10 32 41",
-                                            "isPrimaryContact":  false
-                                        }
-                                    ],
-                          "documents":  [
-                                            {
-                                                "id":  "DOC-ENT-C-01",
-                                                "title":  "Kbis",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/greenbuild/kbis.pdf"
-                                            },
-                                            {
-                                                "id":  "DOC-ENT-C-02",
-                                                "title":  "Contrat collectif",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/greenbuild/contrat-collectif.pdf"
-                                            },
-                                            {
-                                                "id":  "DOC-ENT-C-03",
-                                                "title":  "Fiche contact gestionnaire",
-                                                "type":  "pdf",
-                                                "url":  "https://mon-ece.example/documents/greenbuild/fiche-contact.pdf"
-                                            }
-                                        ]
-                      }
-                  ]
+{
+    "companies": [
+        {
+            "id": "ENT-A",
+            "name": "TechNova Solutions",
+            "siret": "12345678900011",
+            "effectif": 52,
+            "address": {
+                "line1": "24 rue des Lumieres",
+                "postalCode": "69003",
+                "city": "Lyon"
+            },
+            "users": [
+                {
+                    "id": "USR-ENT-A-01",
+                    "firstName": "Camille",
+                    "lastName": "Roux",
+                    "role": "DRH",
+                    "email": "camille.roux@technova-solutions.fr",
+                    "phone": "04 72 10 20 30",
+                    "isPrimaryContact": true
+                },
+                {
+                    "id": "USR-ENT-A-02",
+                    "firstName": "Martin",
+                    "lastName": "Dupont",
+                    "role": "Gestionnaire paie",
+                    "email": "martin.dupont@technova-solutions.fr",
+                    "phone": "04 72 10 20 31",
+                    "isPrimaryContact": false
+                }
+            ],
+            "documents": [
+                {
+                    "id": "DOC-ENT-A-01",
+                    "title": "Kbis",
+                    "type": "pdf",
+                    "url": "https://mon-ece.example/documents/technova/kbis.pdf"
+                },
+                {
+                    "id": "DOC-ENT-A-02",
+                    "title": "Contrat cadre",
+                    "type": "pdf",
+                    "url": "https://mon-ece.example/documents/technova/contrat-cadre.pdf"
+                },
+                {
+                    "id": "DOC-ENT-A-03",
+                    "title": "Grille de cotisations",
+                    "type": "xlsx",
+                    "url": "https://mon-ece.example/documents/technova/grille-cotisations.xlsx"
+                }
+            ]
+        }
+    ]
 }
